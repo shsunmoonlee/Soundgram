@@ -4,16 +4,13 @@ import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import configureStore, { history } from "store";
 import App from "./App";
-import Firebase, { FirebaseContext } from "components/Firebase";
 import * as serviceWorker from "./serviceWorker";
 
 const store = configureStore(/* provide initial state if any */);
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <FirebaseContext.Provider value={Firebase}>
-        <App />
-      </FirebaseContext.Provider>
+      <App />
     </ConnectedRouter>
   </Provider>,
   document.getElementById("root")
