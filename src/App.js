@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 const AppWrapper = styled.div`
-  padding-top: 51px;
+  /* padding-top: 51px; */
   /* background-color: #ffa2a2; */
   width: 100%;
   height: 100%;

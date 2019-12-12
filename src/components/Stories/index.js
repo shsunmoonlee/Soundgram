@@ -11,6 +11,8 @@ export default class App extends React.Component {
     return (
       <Stories
         stories={stories[filter]}
+        onStoryEnd={this.props.onStoryEnd}
+        onStoryStart={this.props.onStoryStart}
         defaultInterval={1500}
         width={432}
         height={768}
